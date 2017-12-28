@@ -28,7 +28,7 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("development")
     }),
-    new CleanWebpackPlugin(["dist"]),
+    new CleanWebpackPlugin(["dist"]),git 
     new HtmlWebpackPlugin({
       title: process.env.APP_TITLE,
       template: path.resolve(__dirname, "templates/index.html")
