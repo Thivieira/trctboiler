@@ -16,6 +16,7 @@ mongoose.connect(process.env.DB_URL);
 const devConfig = require("./webpack.config.dev.js");
 const compiler = webpack(devConfig);
 
+const port = process.env.PORT || 8080;
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.
 app.use(
@@ -43,7 +44,6 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use(express.static(path.join(__dirname, "dist")));
-// Serve the files on port 3000.
-app.listen(3000, function() {
-  console.log("Example app listening on port 3000!\n");
+app.listen(port, function() {
+  console.log(`Example app listening on port ${port}!\n`);
 });
