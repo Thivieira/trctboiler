@@ -33,7 +33,7 @@ module.exports = {
       title: "Development"
     }),
     new HtmlWebpackPlugin({
-      title: "Sistema Corretor",
+      title: process.env.APP_TITLE,
       template: path.resolve(__dirname, "templates/index.html")
     }),
     new ExtractTextPlugin({

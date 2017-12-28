@@ -1,6 +1,7 @@
+APP_TITLE=Example
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=s1mpl3
-DB_URL=mongodb://localhost/myapp
+DB_URI=mongodb://localhost/myapp
 PORT=8080
 SESSION_SECRET=sample

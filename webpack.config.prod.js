@@ -26,7 +26,8 @@ module.exports = {
     }),
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
-      title: "Development"
+      title: process.env.APP_TITLE,
+      template: path.resolve(__dirname, "templates/index.html")
     }),
     // build optimization plugins
     new webpack.optimize.CommonsChunkPlugin({
