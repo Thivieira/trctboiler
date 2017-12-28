@@ -30,9 +30,6 @@ module.exports = {
     }),
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
-      title: "Development"
-    }),
-    new HtmlWebpackPlugin({
       title: process.env.APP_TITLE,
       template: path.resolve(__dirname, "templates/index.html")
     }),
