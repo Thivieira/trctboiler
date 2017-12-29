@@ -43,7 +43,11 @@ module.exports = {
       "process.env.NODE_ENV": '"production"'
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin("styles.css")
+    new ExtractTextPlugin("styles.css"),
+    new webpack.SourceMapDevToolPlugin({
+      filename: '[name].js.map',
+      exclude: ['vendor.js']
+    })
   ],
   output: {
     filename: "[name].bundle.js",
