@@ -28,7 +28,7 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("development")
     }),
-    new CleanWebpackPlugin(["dist"]),git 
+    new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
       title: process.env.APP_TITLE,
       template: path.resolve(__dirname, "templates/index.html")
@@ -45,8 +45,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin("styles.css"),
     new webpack.SourceMapDevToolPlugin({
-      filename: '[name].js.map',
-      exclude: ['vendor.js']
+      filename: "[name].js.map",
+      exclude: ["vendor.js"]
     })
   ],
   output: {
