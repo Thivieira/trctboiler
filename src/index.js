@@ -9,7 +9,7 @@ import {
   Redirect,
   withRouter
 } from "react-router-dom";
-
+import ReactDOM from "react-dom";
 ////////////////////////////////////////////////////////////
 // 1. Click the public page
 // 2. Click the protected page
@@ -87,15 +87,18 @@ const Public = () => <h3>Public</h3>;
 const Protected = () => <h3>Protected</h3>;
 
 class Login extends React.Component {
-  state = {
-    redirectToReferrer: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      redirectToReferrer: false
+    };
+  }
 
-  login = () => {
+  login() {
     fakeAuth.authenticate(() => {
       this.setState({ redirectToReferrer: true });
     });
-  };
+  }
 
   render() {
     const { from } = this.props.location.state || { from: { pathname: "/" } };

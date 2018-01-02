@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#ver:2018-1-2 16:35:35
+#plugin:4.9.0
+
+CACHE:
+../vendor-8f8d4a1d7e48c1e31bf8.min.js
+../app.d611a617068dead82cc8-bundle.min.js
+../manifest.776e0328913b584c5cf3-bundle.min.js
+../
+
+NETWORK:
+*
