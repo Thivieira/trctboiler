@@ -8,15 +8,23 @@ My personal React-Redux-GraphQL-Express repo
 if you are using _yarn_:
 
 `$ yarn start`
+
 start the server and watch for file changes 
+
 `$ yarn start:prod`
+
 sets the environment to production, build the bundle, start the server and watch for file changes. 
+
 `$ yarn dev`
+
 sets the environment to development makes webpack-dev-server do its thing. (loads webpack.config.dev.js)
+
 `$ yarn build`
+
 sets the environment to production, build the bundle and loads webpack.config.prod.js
 
 **tip**
+
 if using _npm_ instead, replace all `yarn` with `npm run`.
 
 ### repo features: 
