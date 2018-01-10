@@ -1,6 +1,9 @@
-# tRCTBOILER
-My personal React-Redux-GraphQL-Express repo
+# tRCTBOILER **nographql**
+
+My personal React-Redux-Express repo
+
 ## !important¡
+
 **.envsample** should be renamed to .env and properly configured.
 
 ## Usage steps:
@@ -9,11 +12,11 @@ if you are using _yarn_:
 
 `$ yarn start`
 
-start the server and watch for file changes 
+start the server and watch for file changes
 
 `$ yarn start:prod`
 
-sets the environment to production, build the bundle, start the server and watch for file changes. 
+sets the environment to production, build the bundle, start the server and watch for file changes.
 
 `$ yarn dev`
 
@@ -27,14 +30,15 @@ sets the environment to production, build the bundle and loads webpack.config.pr
 
 if using _npm_ instead, replace all `yarn` with `npm run`.
 
-### repo features: 
-- use of _dotenv_ module for attaching .env variables.
-- hot reloading of components in dev environment.
-- scss + postcss autoprefixer for css preprocessing.
-- code chunk splitting between app logic and vendor bundle.
-- caching of vendor modules.
-- service worker provided by _offline-plugin_ module.
-- obfuscation and minification of bundles.
-- image loading and compression.
+### repo features:
+
+* use of _dotenv_ module for attaching .env variables.
+* hot reloading of components in dev environment.
+* scss + postcss autoprefixer for css preprocessing.
+* code chunk splitting between app logic and vendor bundle.
+* caching of vendor modules.
+* service worker provided by _offline-plugin_ module.
+* obfuscation and minification of bundles.
+* image loading and compression.
 
 ### Thats all!
